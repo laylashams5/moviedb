@@ -1,0 +1,4 @@
+#Tue Dec 19 20:42:56 GST 2023
+base.0=/Users/elaminbhaa/Desktop/layla/moviedb/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
