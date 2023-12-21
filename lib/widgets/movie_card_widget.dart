@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:moviedb/helpers/app_constants.dart';
+import 'package:moviedb/helpers/common.dart';
 import 'package:moviedb/theme/app_theme.dart';
 
 class MovieCard extends StatelessWidget {
@@ -28,16 +30,19 @@ class MovieCard extends StatelessWidget {
           Stack(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(12.0),
-                child: Image.network(
-                  moviePosterUrl,
-                  fit: BoxFit.cover,
-                  width: 150,
-                  height: 225,
-                ),
-              ),
+                  borderRadius: BorderRadius.circular(12.0),
+                  child: FadeInImage.assetNetwork(
+                    placeholder: AppConstants.placeholderImage,
+                    image: moviePosterUrl.isNotEmpty
+                        ? 'https://image.tmdb.org/t/p/w500/$moviePosterUrl'
+                        : AppConstants.placeholderImage,
+                    width: 150,
+                    height: 225,
+                    fit: BoxFit.cover,
+                    placeholderFit: BoxFit.cover,
+                  )),
               Positioned(
-                bottom: 0,
+                bottom: 8,
                 left: 8,
                 child: Container(
                   decoration: BoxDecoration(
@@ -52,7 +57,7 @@ class MovieCard extends StatelessWidget {
                         value: progress,
                         backgroundColor: lightBlackColor.withOpacity(0.5),
                         valueColor:
-                            const AlwaysStoppedAnimation<Color>(Colors.green),
+                            const AlwaysStoppedAnimation<Color>(accentColor),
                         strokeWidth: 4,
                       ),
                       Center(
@@ -84,7 +89,7 @@ class MovieCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 8.0, top: 5.0),
             child: Text(
-              movieReleaseDate,
+              convertDateString(movieReleaseDate),
               style: TextStyle(
                 color: blackColor.withOpacity(0.5),
                 fontSize: 12,

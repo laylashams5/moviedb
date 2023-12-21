@@ -18,6 +18,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_spinkit: ^5.2.0
   flutter_svg: ^2.0.9
+  video_player: ^2.8.1
+  palette_generator: ^0.3.3+3
+  pull_to_refresh: ^2.0.0
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -27,8 +31,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/imgs/
-    # - assets/icons/
-    # - assets/l10n/
+    - assets/icons/
+    - assets/l10n/
   # fonts:
     # - family: Dubai
     #   fonts:

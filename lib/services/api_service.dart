@@ -3,28 +3,28 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  final String baseUrl = 'http://196.1.1.195/iVisita_API';
+  final String baseUrl = 'https://api.themoviedb.org/3';
 
   Future getData(String endpoint, String? authToken) async {
-    final response =
-        await http.get(Uri.parse('$baseUrl/api/$endpoint'), headers: {
+    final response = await http.get(Uri.parse('$baseUrl$endpoint'), headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer $authToken',
     });
-    debugPrint('response ${response.statusCode}');
     if (response.statusCode == 200) {
       return json.decode(response.body);
-    } else if (response.statusCode == 401) {
-      throw Exception('Unauthorized: Invalid credentials');
+    } else if (response.statusCode == 204) {
+      debugPrint('No content available for this request.');
+      return null;
     } else {
-      throw Exception('Failed to post data to the API');
+      throw Exception(
+          'Request failed with status: ${response.statusCode}. ${response.body}');
     }
   }
 
   Future postData(
       String endpoint, Map<String, dynamic>? data, String? authToken) async {
     final response = await http.post(
-      Uri.parse('$baseUrl/api/$endpoint'),
+      Uri.parse('$baseUrl$endpoint'),
       headers: <String, String>{
         'Content-Type': 'application/json',
         'Authorization': 'Bearer $authToken'
@@ -44,7 +44,7 @@ class ApiService {
   Future<Map<String, dynamic>> putData(
       String endpoint, Map<String, dynamic>? data) async {
     final response = await http.put(
-      Uri.parse('$baseUrl/api/$endpoint'),
+      Uri.parse('$baseUrl$endpoint'),
       headers: <String, String>{
         'Content-Type': 'application/json',
       },
@@ -62,7 +62,7 @@ class ApiService {
 
   Future<void> deleteData(String endpoint) async {
     final response = await http.delete(
-      Uri.parse('$baseUrl/api/$endpoint'),
+      Uri.parse('$baseUrl$endpoint'),
       headers: <String, String>{
         'Content-Type': 'application/json',
       },
