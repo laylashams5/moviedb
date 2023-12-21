@@ -1,16 +1,33 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.moviedb.app-mergeDebugResources-9:/values-hi/values-hi.xml",
+            "outputFile": "com.example.moviedb.app-mergeDebugResources-11:/values-hi/values-hi.xml",
             "map": [
                 {
-                    "source": "/Users/elaminbhaa/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res/values-hi/values-hi.xml",
+                    "source": "/Users/elaminbhaa/.gradle/caches/transforms-3/e255c6ce9910a673f2619b479a7d74a8/transformed/jetified-exoplayer-core-2.18.7/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,123,189,260,328,424,492,615,736",
+                        "endColumns": "67,65,70,67,95,67,122,120,86",
+                        "endOffsets": "118,184,255,323,419,487,610,731,818"
+                    }
+                },
+                {
+                    "source": "/Users/elaminbhaa/.gradle/caches/transforms-3/57d13c65eae90a7945dea98c1aa2b720/transformed/core-1.7.0/res/values-hi/values-hi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "100",
                         "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "823",
+                        "endColumns": "100",
+                        "endOffsets": "919"
                     }
                 }
             ]

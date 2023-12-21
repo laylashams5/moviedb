@@ -13,64 +13,55 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/elaminbhaa/Desktop/layla/moviedb/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/elaminbhaa/Desktop/layla/moviedb/android/app/src/debug/AndroidManifest.xml:6:22-64
+15-->/Users/elaminbhaa/Desktop/layla/moviedb/android/app/src/main/AndroidManifest.xml:2:5-67
+15-->/Users/elaminbhaa/Desktop/layla/moviedb/android/app/src/main/AndroidManifest.xml:2:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[:connectivity_plus] /Users/elaminbhaa/Desktop/layla/moviedb/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
-16-->[:connectivity_plus] /Users/elaminbhaa/Desktop/layla/moviedb/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+16-->/Users/elaminbhaa/Desktop/layla/moviedb/android/app/src/main/AndroidManifest.xml:3:5-79
+16-->/Users/elaminbhaa/Desktop/layla/moviedb/android/app/src/main/AndroidManifest.xml:3:22-76
 17
 18    <application
-19        android:name="android.app.Application"
+19        android:name="io.flutter.app.FlutterMultiDexApplication"
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.6.0] /Users/elaminbhaa/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.7.0] /Users/elaminbhaa/.gradle/caches/transforms-3/57d13c65eae90a7945dea98c1aa2b720/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
-23        android:label="moviedb" >
-24        <activity
-25            android:name="com.example.moviedb.MainActivity"
-26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-27            android:exported="true"
-28            android:hardwareAccelerated="true"
-29            android:launchMode="singleTop"
-30            android:theme="@style/LaunchTheme"
-31            android:windowSoftInputMode="adjustResize" >
-32
-33            <!--
-34                 Specifies an Android theme to apply to this Activity as soon as
-35                 the Android process has started. This theme is visible to the user
-36                 while the Flutter UI initializes. After that, this theme continues
-37                 to determine the Window background behind the Flutter UI.
-38            -->
-39            <meta-data
-40                android:name="io.flutter.embedding.android.NormalTheme"
-41                android:resource="@style/NormalTheme" />
-42
-43            <intent-filter>
-44                <action android:name="android.intent.action.MAIN" />
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-47            </intent-filter>
-48        </activity>
-49        <!--
-50             Don't delete the meta-data below.
-51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-52        -->
-53        <meta-data
-54            android:name="flutterEmbedding"
-55            android:value="2" />
-56
-57        <uses-library
-57-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-58            android:name="androidx.window.extensions"
-58-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-59            android:required="false" />
-59-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-60        <uses-library
-60-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-61            android:name="androidx.window.sidecar"
-61-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-62            android:required="false" />
-62-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-63    </application>
-64
-65</manifest>
+23        android:label="MovieDB"
+24        android:usesCleartextTraffic="true" >
+25        <activity
+26            android:name="com.example.moviedb.MainActivity"
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28            android:exported="true"
+29            android:hardwareAccelerated="true"
+30            android:launchMode="singleTop"
+31            android:theme="@style/LaunchTheme"
+32            android:windowSoftInputMode="adjustResize" >
+33            <meta-data
+34                android:name="io.flutter.embedding.android.NormalTheme"
+35                android:resource="@style/NormalTheme" />
+36
+37            <intent-filter>
+38                <action android:name="android.intent.action.MAIN" />
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+41            </intent-filter>
+42        </activity>
+43
+44        <meta-data
+45            android:name="flutterEmbedding"
+46            android:value="2" />
+47
+48        <uses-library
+48-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+49            android:name="androidx.window.extensions"
+49-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+50            android:required="false" />
+50-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+51        <uses-library
+51-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+52            android:name="androidx.window.sidecar"
+52-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+53            android:required="false" />
+53-->[androidx.window:window:1.0.0-beta04] /Users/elaminbhaa/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+54    </application>
+55
+56</manifest>
