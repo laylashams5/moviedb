@@ -14,7 +14,6 @@ To run the app, follow these steps:
 
 To run the app, follow these steps:
 
-1. git clone https://github.com/abidakram01/angular-movie-app.git
 2. cd web
 3. npm install
 4. ng serve and go to http://localhost:4200/
