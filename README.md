@@ -1,4 +1,8 @@
-## Running the Application
+## MovieDB
+
+A project involving web and mobile applications. The repository includes directories for images, mobile, and web components, and utilizes languages like Dart,typescript.
+
+## Running the Mobile Application
 
 To run the app, follow these steps:
 
@@ -14,10 +18,10 @@ To run the app, follow these steps:
 
 To run the app, follow these steps:
 
-1. git clone git clone https://github.com/laylashams5/moviedb
-2. cd web
-3. npm install
-4. ng serve and go to http://localhost:4200/
+1. `git clone git clone https://github.com/laylashams5/moviedb`
+2. `cd web`
+3. `npm install`
+4. `ng serve` and go to http://localhost:4200/
 
 Become a contributor ?
 Find a bug, contribute some code or suggest ideas ? don't hesitate ! Create a pull request or an issue.
