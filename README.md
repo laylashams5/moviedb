@@ -18,10 +18,11 @@ To run the app, follow these steps:
 
 To run the app, follow these steps:
 
-1. `git clone git clone https://github.com/laylashams5/moviedb`
-2. `cd web`
-3. `npm install`
-4. `ng serve` and go to http://localhost:4200/
+1. Ensure you have Angular installed and set up.
+2. `git clone git clone https://github.com/laylashams5/moviedb`
+3. `cd web`
+4. `npm install`
+5. `ng serve` and go to http://localhost:4200/
 
 Become a contributor ?
 Find a bug, contribute some code or suggest ideas ? don't hesitate ! Create a pull request or an issue.
