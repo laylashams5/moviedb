@@ -1,0 +1,11 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { NgProgressRouterModule } from './public_api';
+export { NG_PROGRESS_ROUTER_CONFIG as ɵc } from './lib/ng-progress-router.interface';
+export { NgProgressRouter as ɵa } from './lib/ng-progress-router.service';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LXByb2dyZXNzYmFyLXJvdXRlci5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0BuZ3gtcHJvZ3Jlc3NiYXIvcm91dGVyLyIsInNvdXJjZXMiOlsibmd4LXByb2dyZXNzYmFyLXJvdXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsdUNBQWMsY0FBYyxDQUFDO0FBRTdCLE9BQU8sRUFBQyx5QkFBeUIsSUFBSSxFQUFFLEVBQThCLE1BQU0sb0NBQW9DLENBQUM7QUFDaEgsT0FBTyxFQUFDLGdCQUFnQixJQUFJLEVBQUUsRUFBQyxNQUFNLGtDQUFrQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpY19hcGknO1xuXG5leHBvcnQge05HX1BST0dSRVNTX1JPVVRFUl9DT05GSUcgYXMgybVjLE5nUHJvZ3Jlc3NSb3V0ZXJDb25maWcgYXMgybVifSBmcm9tICcuL2xpYi9uZy1wcm9ncmVzcy1yb3V0ZXIuaW50ZXJmYWNlJztcbmV4cG9ydCB7TmdQcm9ncmVzc1JvdXRlciBhcyDJtWF9IGZyb20gJy4vbGliL25nLXByb2dyZXNzLXJvdXRlci5zZXJ2aWNlJzsiXX0=

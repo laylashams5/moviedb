@@ -1,0 +1,30 @@
+.footer {
+  background-color: #032541;
+  padding: 1rem 0rem 1rem;
+  border-top: 1px solid hsla(207, 91%, 13%, 0.267);
+  p {
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .list-inline {
+    li {
+      a {
+        width: 4rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}

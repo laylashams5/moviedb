@@ -44,14 +44,6 @@ p {
 }
 
 
-/**
-* Remove text-shadow in selection highlight:
-* https://twitter.com/miketaylr/status/12228805301
-*
-* These selection rule sets have to be separate.
-* Customize the background color to match your design.
-*/
-
 ::-moz-selection {
   text-shadow: none;
   background: #b3d4fc;
@@ -61,11 +53,6 @@ p {
   text-shadow: none;
   background: #b3d4fc;
 }
-
-/**
-* A better looking default horizontal rule
-*/
-
 hr {
   display: block;
   height: 1px;
@@ -74,13 +61,6 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
 }
-
-/**
-* Remove the gap between audio, canvas, iframes,
-* images, videos and the bottom of their containers:
-* https://github.com/h5bp/base5-boilerplate/issues/440
-*/
-
 audio,
 canvas,
 iframe,
@@ -89,10 +69,6 @@ svg,
 video {
   vertical-align: middle;
 }
-
-/**
-* Remove default fieldset styles.
-*/
 
 fieldset {
   padding: 0;

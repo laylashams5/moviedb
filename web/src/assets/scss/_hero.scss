@@ -6,7 +6,7 @@
   justify-content: space-between;
   height: 35rem;
   color: #999;
-  background-color: #000;
+  background-color: #043761; 
   position: relative;
 
   @media (min-width: $breakpoint-xsmall) {
@@ -21,16 +21,19 @@
     padding-bottom: 40%;
   }
 }
+
 .slider {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #0A4B78; /* Medium blue background */
 
   @media (min-width: $breakpoint-xsmall) {
     .slider {
       position: relative !important;
+      background-color: #0D5FA6; /* Lighter blue */
     }
   }
 }
@@ -61,20 +64,21 @@
     content: "";
     background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.1) 100%
+      rgba(0, 77, 128, 1) 0%, /* Dark blue at the bottom */
+      rgba(13, 95, 166, 0.1) 50%, /* Lighter blue in the middle */
+      rgba(13, 95, 166, 0.1) 100% /* Same lighter blue at the top */
     );
 
     @media (min-width: $breakpoint-medium) {
       background-image: linear-gradient(
         to right,
-        #000 0,
-        transparent 50%,
-        transparent 100%
+        rgba(0, 77, 128, 1) 0%, /* Dark blue on the left */
+        rgba(13, 95, 166, 0) 50%, /* Gradual fade to transparent */
+        rgba(13, 95, 166, 0) 100% /* Transparent on the right */
       );
     }
   }
+  
 
   > div {
     width: 100%;

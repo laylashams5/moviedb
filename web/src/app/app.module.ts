@@ -1,30 +1,45 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { MoviesComponent } from './components/movies/movies.component';
-import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'primeng/carousel';
+import { SidebarModule } from 'primeng/sidebar';
+import { HeaderComponent } from './components/includes/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/includes/footer/footer.component';
+import { PipeModule } from './pipe/pipe.module';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { SkeletonModule } from './shared/skeleton/skeleton.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MoviesComponent,
-    MovieDetailsComponent,
     HeaderComponent,
+    SliderComponent,
+    HomeComponent,
     FooterComponent,
-    SliderComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    PipeModule,
+    CarouselModule,
+    SidebarModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    SkeletonModule
   ],
-  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

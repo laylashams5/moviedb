@@ -1,0 +1,12 @@
+/**
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/*
+ * Public API Surface of ngx-skeleton-loader
+ */
+export { NgxSkeletonLoaderComponent } from './lib/ngx-skeleton-loader.component';
+export { NgxSkeletonLoaderModule } from './lib/ngx-skeleton-loader.module';
+export { NGX_SKELETON_LOADER_CONFIG } from './lib/ngx-skeleton-loader-config.types';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvd2lsbG1lbmRlc25ldG8vUHJvamVjdHMvbmd4LXNrZWxldG9uLWxvYWRlci9wcm9qZWN0cy9uZ3gtc2tlbGV0b24tbG9hZGVyL3NyYy8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFJQSwyQ0FBYyxxQ0FBcUMsQ0FBQztBQUNwRCx3Q0FBYyxrQ0FBa0MsQ0FBQztBQUNqRCwyQ0FBYyx3Q0FBd0MsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2Ygbmd4LXNrZWxldG9uLWxvYWRlclxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1za2VsZXRvbi1sb2FkZXIuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1za2VsZXRvbi1sb2FkZXIubW9kdWxlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1za2VsZXRvbi1sb2FkZXItY29uZmlnLnR5cGVzJztcbiJdfQ==
