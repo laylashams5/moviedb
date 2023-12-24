@@ -10,7 +10,7 @@ import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'FlixMovies';
+  title = 'MovieDB';
   loading = false;
   color: ThemePalette = 'warn';
   mode: ProgressSpinnerMode = 'indeterminate';
