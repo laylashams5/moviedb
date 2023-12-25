@@ -1,12 +1,17 @@
 @import "../scss/variables";
-
+$dark-blue: #032541;
+$light-blue: #01b4e4;
+$white: #fff;
+$light-grey: #eee;
+$dark-grey: #333;
+$rating-gold: #ffdd00;
 .hero {
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 35rem;
-  color: #999;
-  background-color: #043761; 
+  position: relative;
+  background-color: $dark-blue;
   position: relative;
 
   @media (min-width: $breakpoint-xsmall) {
@@ -63,10 +68,10 @@
     display: block;
     content: "";
     background-image: linear-gradient(
-      to top,
-      rgba(0, 77, 128, 1) 0%, /* Dark blue at the bottom */
-      rgba(13, 95, 166, 0.1) 50%, /* Lighter blue in the middle */
-      rgba(13, 95, 166, 0.1) 100% /* Same lighter blue at the top */
+      to bottom,
+      rgba($dark-blue, 0.9) 0%,
+      rgba($dark-blue, 0.7) 50%,
+      rgba($dark-blue, 0.5) 100%
     );
 
     @media (min-width: $breakpoint-medium) {
@@ -117,7 +122,7 @@
 
 .pane {
   padding: 0 1.5rem 1.5rem;
-
+  background-color: rgba($dark-blue, 0.8); 
   @media (min-width: $breakpoint-small) {
     padding: 0 4rem 4rem;
   }
@@ -148,7 +153,7 @@
   margin: 0 0 1.4rem;
   font-size: 2.8rem;
   line-height: 1.1;
-  color: #fff;
+  color: $light-blue;
   letter-spacing: $letter-spacing;
   cursor: pointer;
 
@@ -247,5 +252,37 @@
     color: $base-font-color;
     font-size: 16px;
     font-weight: 400;
+  }
+}
+.meta, .desc {
+  color: $white;
+}
+.info {
+  span {
+    color: $light-grey;
+    &:not(:last-child)::after {
+      color: $white;
+    }
+  }
+}
+
+.rate {
+  color: $rating-gold;
+  
+  i {
+    color: $rating-gold;
+  }
+  
+  span {
+    color: $white; 
+  }
+}
+
+.nav-link, .name {
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $light-blue;
+    text-decoration: none; 
   }
 }

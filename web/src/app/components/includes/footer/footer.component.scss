@@ -1,27 +1,47 @@
 .footer {
-  background-color: #032541;
-  padding: 1rem 0rem 1rem;
-  border-top: 1px solid hsla(207, 91%, 13%, 0.267);
+  background-color: #0A1622; // A darker shade for contrast
+  padding: 2rem 0; // More vertical padding for a spacious look
+  border-top: 4px solid #01b4e4; // A brighter color for the top border to add a pop of color
+  color: #ccc; // Lighter text color for better readability
+
   p {
-    margin-bottom: 5px;
-    font-size: 15px;
-    line-height: 1;
+    margin-bottom: 1rem; // More margin for separation
+    font-size: 0.9rem; // Smaller font size for subtlety
+    line-height: 1.5; // Increased line height for readability
+    color: #ccc; // Lighter text color for better readability
+
+    a {
+      color: #01b4e4; // Consistent with the top border for design cohesion
+      text-decoration: none; // Remove underline from links
+
+      &:hover {
+        color: #fff; // White color on hover for interactivity
+      }
+    }
   }
 
   .list-inline {
+    padding: 0; // Remove default padding
+    margin-bottom: 1rem; // Space below the icons list
+
     li {
+      display: inline-block; // For inline display with spacing
+      margin-right: 1rem; // Space between icons
+
       a {
-        width: 4rem;
-        height: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: transform .3s ease-in-out; // Smooth transition for scale
 
         svg {
-          transition: all .3s ease-in-out;
+          fill: #01b4e4; // Use the theme's highlight color
+          width: 20px; // Set a fixed width
+          height: 20px; // Set a fixed height
 
           &:hover {
-            fill: #fff;
+            transform: scale(1.2); // Slightly enlarge icons on hover
+            fill: #fff; // Change fill color on hover for effect
           }
         }
       }
