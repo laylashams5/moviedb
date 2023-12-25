@@ -11,7 +11,7 @@ $rating-gold: #ffdd00;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-color: $dark-blue;
+  background-color: #1e5168;
   position: relative;
 
   @media (min-width: $breakpoint-xsmall) {
@@ -111,7 +111,7 @@ $rating-gold: #ffdd00;
 
 .image {
   display: inline-block;
-  max-width: none;
+  width: none;
   height: 100%;
 
   @media (max-width: $breakpoint-medium - 1) {
