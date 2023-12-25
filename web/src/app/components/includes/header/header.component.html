@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-<a class="navbar-brand" [routerLink]="['/']">MovieDB</a>
+<a class="navbar-brand" [routerLink]="['/']">    <img src="assets/images/logo.png" alt="MovieDB Logo">
+</a>
     <ul class="navbar-nav listMenu">
         <li class="nav-item active">
             <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">Home
@@ -16,6 +17,7 @@
             <a class="nav-link" [routerLink]="['/genres']" routerLinkActive="router-link-active">Genres</a>
         </li>
     </ul>
+
     <span class="sidebar-nav-btn"  pButton icon="pi pi-plus" label="Show" (click)="leftSidebar = true"><img src="assets/images/menu.svg"></span>
 </nav>
 

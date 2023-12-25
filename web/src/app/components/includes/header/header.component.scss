@@ -13,6 +13,14 @@
     color: $base-font-color !important;
     margin-right: 2rem;
     font-size: 24px;
+      img {
+        height: auto; 
+        width: 60px;
+    
+        display: block;
+        margin: 0 auto;
+      }
+    
   }
 
   .navbar-nav {
@@ -136,3 +144,4 @@
   display: flex;
   background-color: #032541;
 }
+
